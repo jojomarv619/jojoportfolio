@@ -11,14 +11,14 @@ const About = () => {
             </p>
           </div>
           <div></div>
-          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+          <div className="max-h-[1000px] h-full max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
             <div className="sm:text-right text-4xl font-bold">
               <p>
                 Heya, it's me jojo again if something piques your interest just
                 contact
               </p>
             </div>
-            <div>
+            <div className="description">
               <p>
                 I am a Jr Developer at work, and a full game enthusiast. I guess
                 I'm gonna start with why did I chose to be a Developer. I like
