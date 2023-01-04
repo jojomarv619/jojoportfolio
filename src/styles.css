@@ -1,0 +1,14 @@
+.icon{
+    /* -webkit-box-reflect: below; */
+     /* width: 100px; */
+
+     animation: rotation 3s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
