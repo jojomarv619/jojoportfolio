@@ -1,9 +1,9 @@
 import React from "react";
-import css from "../assets/professionalSkills/css.png";
-import html from "../assets/professionalSkills/html.png";
-import node from "../assets/professionalSkills/node.png";
-import react from "../assets/professionalSkills/react.png";
-import github from "../assets/professionalSkills/github.png";
+import css from "../../assets/professionalSkills/css.png";
+import html from "../../assets/professionalSkills/html.png";
+import node from "../../assets/professionalSkills/node.png";
+import react from "../../assets/professionalSkills/react.png";
+import github from "../../assets/professionalSkills/github.png";
 
 const Skills = () => {
   return (

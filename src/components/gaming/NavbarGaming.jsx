@@ -1,34 +1,37 @@
 import React, { useState } from "react";
-import jojoicon from "../assets/jojoicon.png";
-import {
-  FaBars,
-  FaGithub,
-  FaYoutube,
-  FaTimes,
-  FaLinkedin,
-  //   FaFacebook,
-  //   FaGit,
-} from "react-icons/fa";
-// import { HiOutlineMail } from "react-icons/hi";
-// import { BsFillPersonFill } from "react-icons/bs";
+import jojoicon from "../../assets/jojoicon.png";
 
-const Navbar = () => {
+import waku from "../../assets/waku.png";
+import { FaBars, FaGithub, FaYoutube, FaTimes, FaTwitch } from "react-icons/fa";
+
+const NavbarGaming = (props) => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
+  const [gaming, setGaming] = useState(false);
+
+  const buttonClick = () => {
+    setGaming(!gaming);
+    props.gaming(!gaming);
+  };
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#AF734A] text-gray-300">
       <div>
-        <img class="icon" src={jojoicon} alt="icon" style={{ width: "85px" }} />
+        <button onClick={buttonClick}>
+          <img
+            className="icon"
+            src={waku}
+            alt="icon"
+            style={{ width: "85px" }}
+          />
+        </button>
       </div>
       {/* menu */}
 
       <ul className="hidden md:flex">
         <li className="text-[#0a192f]">Home</li>
         <li className="text-[#0a192f]">About</li>
-        <li className="text-[#0a192f]">Professional Skills</li>
-        <li className="text-[#0a192f]">Hobbies</li>
-        <li className="text-[#0a192f]">Contact</li>
+        <li className="text-[#0a192f]">Games</li>
       </ul>
 
       {/* Hamburger */}
@@ -46,7 +49,7 @@ const Navbar = () => {
       >
         <li className="py-6 text-4xl ">Home</li>
         <li className="py-6 text-4xl">About</li>
-        <li className="py-6 text-4xl">Professional Skills</li>
+        <li className="py-6 text-4xl">Techology</li>
         <li className="py-6 text-4xl">Hobbies</li>
         <li className="py-6 text-4xl">Contact</li>
       </ul>
@@ -63,16 +66,7 @@ const Navbar = () => {
               Gaming Youtube <FaYoutube size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Coding Youtube <FaYoutube size={30} />
-            </a>
-          </li>
+
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
@@ -80,7 +74,7 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn <FaLinkedin size={30} />
+              Twitch <FaTwitch size={30} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-400">
@@ -93,20 +87,10 @@ const Navbar = () => {
               Personal Github <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-500">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/jjhipolits/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Company Github <FaGithub size={30} />
-            </a>
-          </li>
         </ul>
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default NavbarGaming;
