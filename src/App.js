@@ -2,7 +2,7 @@ import { useState } from "react";
 import About from "./components/work/About";
 import Home from "./components/work/Home";
 import Navbar from "./components/work/Navbar";
-import Skills from "./components/work/Skills";
+import Portfolio from "./components/work/Portfolio";
 import AboutGaming from "./components/gaming/AboutGaming";
 import SkillsGaming from "./components/gaming/SkillsGaming";
 import HomeGaming from "./components/gaming/HomeGaming";
@@ -37,7 +37,7 @@ function App() {
       {gaming && <About /> }
       {!gaming && <AboutGaming />}
       
-      {gaming && <Skills /> }
+      {gaming && <Portfolio /> }
       {!gaming && <SkillsGaming />}
       
       

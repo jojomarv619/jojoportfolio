@@ -13,12 +13,41 @@
     }
   }
 
-@media (max-width:500px) { 
-  .description{
-    margin-bottom: 100px;
+/* @media screen 
+{
+  @media (max-width: 100px) 
+  {
+    @media (max-height: 500px)
+    {
+      .description
+      {
+        margin-bottom: 150px;
+      }
+    }
 
+  }
+
+}   */
+
+
+
+@media (min-height: 320px){
+
+  .portDescription{
+    margin-top: 30% !important;
+  }
 }
 
 
-  
-}
+/* @media (min-width: 320px){
+
+  .portDescription{
+    margin-top: 30% !important;
+  }
+} */
+
+
+
+
+
+
