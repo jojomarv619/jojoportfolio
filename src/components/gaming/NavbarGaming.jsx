@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import jojoicon from "../../assets/jojoicon.png";
-
-import waku from "../../assets/waku.png";
+import hutao from "../../assets/hutao.png";
 import { FaBars, FaGithub, FaYoutube, FaTimes, FaTwitch } from "react-icons/fa";
 
 const NavbarGaming = (props) => {
@@ -15,14 +13,14 @@ const NavbarGaming = (props) => {
     props.gaming(!gaming);
   };
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#AF734A] text-gray-300">
+    <div className="fixed w-full h-[50px] flex justify-between items-center px-4 bg-[#AF734A] text-gray-300">
       <div>
         <button onClick={buttonClick}>
           <img
             className="icon"
-            src={waku}
-            alt="icon"
-            style={{ width: "85px" }}
+            src={hutao}
+            alt="hutao"
+            style={{ width: "40px" }}
           />
         </button>
       </div>

@@ -11,6 +11,7 @@ import SidebarGaming from "./components/gaming/SidebarGaming";
 
 import "./styles.css";
 import NavbarGaming from "./components/gaming/NavbarGaming";
+import Contact from "./components/work/Contact";
 
 function App() {
   const [gaming, setGaming] = useState(true);
@@ -20,7 +21,7 @@ function App() {
   }
 
   return (
-    <div >
+    <div className="jojo flex flex-col">
 
       
       {gaming && <Navbar gaming={gamingMode}/>}
@@ -36,10 +37,13 @@ function App() {
      
       {gaming && <About /> }
       {!gaming && <AboutGaming />}
-      
       {gaming && <Portfolio /> }
-      {!gaming && <SkillsGaming />}
-      
+      {/* {!gaming && <SkillsGaming />} */}
+
+      {gaming && <Contact />}
+
+
+  
       
      
     </div>

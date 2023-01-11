@@ -13,39 +13,25 @@
     }
   }
 
-/* @media screen 
-{
-  @media (max-width: 100px) 
-  {
-    @media (max-height: 500px)
-    {
-      .description
-      {
-        margin-bottom: 150px;
-      }
-    }
-
-  }
-
-}   */
 
 
-
-@media (min-height: 320px){
-
-  .portDescription{
-    margin-top: 30% !important;
-  }
-}
-
-
-/* @media (min-width: 320px){
-
-  .portDescription{
-    margin-top: 30% !important;
+/* @media  (max-width: 500px){
+  .jojo{
+    font-size: 12px !important;
   }
 } */
 
+/* @media (max-width: 300px){
+  .about{
+    margin-bottom: 50px;
+  }
+} */
+
+@media (max-width: 700){
+  .aboutDes{
+    margin-bottom: 100px;
+  }
+}
 
 
 

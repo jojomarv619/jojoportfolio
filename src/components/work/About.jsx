@@ -2,33 +2,36 @@ import React from "react";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
-      <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-pink-600">
-              About
-            </p>
-          </div>
-          <div></div>
-          <div className="max-h-[1000px] h-full max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-            <div className="sm:text-right text-4xl font-bold">
-              <p>
-                Heya, it's me jojo again if something piques your interest just
-                contact
+    <div className="w-full about">
+      <div className="w-full h-screen bg-[#0a192f] text-gray-300">
+        <div className="flex flex-col justify-center items-center w-full h-full">
+          <div className="max-w-[1000px] w-full  gap-8">
+            <div className="content-center justify-center sm:text-center pb-8 pl-4 ">
+              <p className=" text-4xl font-bold inline border-b-4 border-pink-600">
+                About
               </p>
             </div>
-            <div className="description">
-              <p>
-                I am a Jr Developer at work, and a full game enthusiast. I guess
-                I'm gonna start with why did I chose to be a Developer. I like
-                the idea that there are some complicated things about being
-                Developer especially for people who are new to it, what I like
-                doing mostly would be creating word files, or probably even
-                creating basic tutorials as to where I could help other people
-                understand it in a way that's much simpler. I believe in the
-                term KISS which is you guessed it "Keep It Short and Simple".
-              </p>
+            <div></div>
+            <div className="max-h-[1000px] h-full max-w-[1000px] w-full grid sm:grid-cols-1 md:grid-cols-2 gap-8 px-4">
+              <div className="sm:text-right text-4xl font-bold">
+                <p>
+                  Heya, it's me jojo again if something piques your interest
+                  just contact
+                </p>
+              </div>
+              <div className="aboutDes">
+                <p>
+                  What is up guys, I am still kind of new to React JS but I do
+                  very much enjoy designing especially with the different
+                  animations we can use. just looking on the top left corner you
+                  can see the "Github" logo what's more interesting is if you
+                  click that logo this will actually change the current page you
+                  are in. You are currently viewing my Professional web page.
+                  Try clicking the Gamer Mode or Icon on the top left it will
+                  prompt you to another web page which is my gaming profile my
+                  steam, discord and various games.
+                </p>
+              </div>
             </div>
           </div>
         </div>
