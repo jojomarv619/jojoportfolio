@@ -1,6 +1,6 @@
 import React from "react";
-import css from "../../assets/professionalSkills/css.png";
 // import css from "assets/professionalSkills/css.png";
+import css from "../../assets/professionalSkills/css.png";
 // import html from "assets/professionalSkills/html.png";
 import html from "../../assets/professionalSkills/html.png";
 // import node from "assets/professionalSkills/node.png";
@@ -12,7 +12,7 @@ import github from "../../assets/professionalSkills/github.png";
 
 const Skills = () => {
   return (
-    <div className="portfolio bg-[#0a192f]  text-gray-300 py-4">
+    <div className="portfolio bg-[#0a192f]  text-gray-300 py-4 px-4">
       {/* Container */}
       <div className="max-w-[1000px] mt-10 mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="portDescription">
@@ -29,7 +29,7 @@ const Skills = () => {
         </div>
         <div className="shadow-md shadow-[#00FF00] hover:scale-110 duration-500">
           <img className="w-20 mx-auto" src={css} alt="css icon" />
-          <p className="my-4">CSS</p>
+          <p className="my-4 ">CSS</p>
         </div>
         <div className="shadow-md shadow-[#00FF00] hover:scale-110 duration-500">
           <img className="w-20 mx-auto" src={node} alt="css icon" />
