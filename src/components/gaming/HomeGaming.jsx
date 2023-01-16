@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
-const Home = (props) => {
+const HomeGaming = (props) => {
   const buttonClick = () => {
     props.gaming(true);
   };
@@ -13,8 +13,8 @@ const Home = (props) => {
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Ussurix Wildstride
         </h1>
-        <h2 className="text-yellow-300">Steam ID:</h2>
-        <h3 className="text-yellow-500">Discord ID: </h3>
+        <h2 className="text-[#ccd6f6]">Steam ID: <a href="https://steamcommunity.com/profiles/76561198079177038/" target='_blank' >118911310</a>  </h2>
+        <h3 className="text-[#ccd6f6]">Discord ID: jojomarv619 #3997</h3>
 
         <div className="click">
           <button
@@ -32,4 +32,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default HomeGaming;

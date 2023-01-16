@@ -51,11 +51,11 @@ const Navbar = (props) => {
             Portfolio
           </Link>
         </li>
-        <li className="text-[#0a192f]">
+        {/* <li className="text-[#0a192f]">
           <Link to="contact" spy={true} smooth={true} duration={500}>
             Contact
           </Link>
-        </li>
+        </li> */}
       </ul>
 
       {/* Hamburger */}
