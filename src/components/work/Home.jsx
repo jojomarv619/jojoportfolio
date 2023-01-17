@@ -1,5 +1,7 @@
 // import React, { useState } from "react";
+import { useState } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import Modal from "../Modal";
 
 const Home = (props) => {
   const buttonClick = () => {
@@ -13,7 +15,9 @@ const Home = (props) => {
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Marvin Joseph Salaber Hipolito
         </h1>
-        <h2 className="text-[#ccd6f6]">You can guys can call me jojo, I am currently a Junior Developer</h2>
+        <h2 className="text-[#ccd6f6]">
+          You can guys can call me jojo, I am currently a Junior Developer
+        </h2>
         <h3 className="text-[#ccd6f6]"></h3>
 
         <div className="click">
