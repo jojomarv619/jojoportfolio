@@ -6,14 +6,22 @@ const HomeGaming = (props) => {
     props.gaming(true);
   };
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f]">
+    <div className="homegaming w-full h-screen bg-[#0a192f]">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-pink-600"> Henlo, my name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Ussurix Wildstride
         </h1>
-        <h2 className="text-[#ccd6f6]">Steam ID: <a href="https://steamcommunity.com/profiles/76561198079177038/" target='_blank' >118911310</a>  </h2>
+        <h2 className="text-[#ccd6f6]">
+          Steam ID:{" "}
+          <a
+            href="https://steamcommunity.com/profiles/76561198079177038/"
+            target="_blank"
+          >
+            118911310
+          </a>{" "}
+        </h2>
         <h3 className="text-[#ccd6f6]">Discord ID: jojomarv619 #3997</h3>
 
         <div className="click">

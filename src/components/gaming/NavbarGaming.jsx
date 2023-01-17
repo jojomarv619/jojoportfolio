@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import hutao from "../../assets/hutao.png";
 import { FaBars, FaGithub, FaYoutube, FaTimes, FaTwitch } from "react-icons/fa";
 
@@ -27,9 +28,21 @@ const NavbarGaming = (props) => {
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li className="text-[#0a192f]">Home</li>
-        <li className="text-[#0a192f]">About</li>
-        <li className="text-[#0a192f]">Games</li>
+        <li className="text-[#0a192f]">
+          <Link to="homegaming" spy={true} smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className="text-[#0a192f]">
+          <Link to="aboutgaming" spy={true} smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li className="text-[#0a192f]">
+          <Link to="games" spy={true} smooth={true} duration={500}>
+            Portfolio
+          </Link>
+        </li>
       </ul>
 
       {/* Hamburger */}

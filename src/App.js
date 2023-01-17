@@ -11,6 +11,7 @@ import "./styles.css";
 import NavbarGaming from "./components/gaming/NavbarGaming";
 import Games from "./components/gaming/Games";
 
+
 function App() {
   const [gaming, setGaming] = useState(true);
   const gamingMode = (value) => {
