@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   FaGithub,
   FaYoutube,
   FaTwitch,
   FaTwitter,
   FaDiscord,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 const SidebarGaming = () => {
   return (
@@ -54,7 +54,7 @@ const SidebarGaming = () => {
         <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#7289DA]">
           <a
             className="flex justify-between items-center w-full text-gray-300"
-            href="https://github.com/jojomarv619"
+            href="https://discord.com/"
             target="_blank"
             rel="noreferrer"
           >
