@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
+import React, { useState } from 'react';
+import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const HomeGaming = (props) => {
   const buttonClick = () => {
     if (
       window.confirm(
-        "Are you sure you want to move to work mode DOTA muna pre tanong mo pa si Vonn?"
+        'Are you sure you want to move to work mode DOTA muna pre tanong mo pa si Vonn?'
       )
     ) {
       props.gaming(true);
@@ -20,15 +20,15 @@ const HomeGaming = (props) => {
           Ussurix Wildstride
         </h1>
         <h2 className="text-[#ccd6f6]">
-          Steam ID:{" "}
+          This is my Steam ID:{' '}
           <a
             href="https://steamcommunity.com/profiles/76561198079177038/"
             target="_blank"
           >
             118911310
-          </a>{" "}
+          </a>{' '}
         </h2>
-        <h3 className="text-[#ccd6f6]">Discord ID: jojomarv619 #3997</h3>
+        <h3 className="text-[#ccd6f6]">My Discord ID: jojomarv619 #3997</h3>
 
         <div className="click">
           <button
