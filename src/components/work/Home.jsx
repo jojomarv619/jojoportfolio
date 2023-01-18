@@ -1,11 +1,15 @@
 // import React, { useState } from "react";
 import { useState } from "react";
+import { FaWindows } from "react-icons/fa";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Modal from "../Modal";
 
 const Home = (props) => {
   const buttonClick = () => {
-    props.gaming(false);
+    if (window.confirm("Are you sure you want to move to work mode?")) {
+      props.gaming(false);
+    }
+    // props.gaming(false);
   };
   return (
     <div className="home w-full h-screen bg-[#0a192f]">
