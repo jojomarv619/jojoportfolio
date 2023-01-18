@@ -40,7 +40,7 @@ const NavbarGaming = (props) => {
         </li>
         <li className="text-[#0a192f]">
           <Link to="games" spy={true} smooth={true} duration={500}>
-            Portfolio
+            Games
           </Link>
         </li>
       </ul>

@@ -7,7 +7,7 @@ import elsword from "../../assets/games/elsword.png";
 
 const Games = () => {
   return (
-    <div className="portfolio bg-[#0a192f]  text-gray-300 py-4 px-4">
+    <div className="games bg-[#0a192f]  text-gray-300 py-4 px-4">
       {/* Container */}
       <div className="max-w-[1000px] mt-10 mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="portDescription">

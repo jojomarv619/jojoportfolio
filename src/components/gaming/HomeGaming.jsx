@@ -3,7 +3,13 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 const HomeGaming = (props) => {
   const buttonClick = () => {
-    props.gaming(true);
+    if (
+      window.confirm(
+        "Are you sure you want to move to work mode DOTA muna pre tanong mo pa si Vonn?"
+      )
+    ) {
+      props.gaming(true);
+    }
   };
   return (
     <div className="homegaming w-full h-screen bg-[#0a192f]">
