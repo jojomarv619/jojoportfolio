@@ -1,12 +1,23 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
+import axios from 'axios';
 
 // import github from "assets/professionalSkills/github.png";
-import github from "../../assets/professionalSkills/github.png";
+import github from '../../assets/professionalSkills/github.png';
 
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = (props) => {
+  const [navbar, setNavbar] = useState([]);
+  useEffect(() => {
+    loadUsers();
+  }, []);
+  const loadUsers = async () => {
+    const result = await axios.get(
+      'http://localhost:8081/portfolionavbar/navbar'
+    );
+    setNavbar(result.data[0]);
+  };
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
@@ -22,33 +33,36 @@ const Navbar = (props) => {
   };
 
   return (
-    <div className="fixed w-full h-[50px] flex justify-between items-center px-4 bg-[#AF734A] text-gray-300 z-10">
+    <div className='fixed w-full h-[50px] flex justify-between items-center px-4 bg-[#AF734A] text-gray-300 z-10'>
       <div>
         <button onClick={buttonClick}>
           <img
-            className="icon"
+            className='icon'
             src={github}
-            alt="icon"
-            style={{ width: "30px" }}
+            alt='icon'
+            style={{ width: '30px' }}
           />
         </button>
       </div>
       {/* menu */}
 
-      <ul className="hidden md:flex">
-        <li className="text-[#0a192f]">
-          <Link to="home" spy={true} smooth={true} duration={500}>
-            Home
+      <ul className='hidden md:flex'>
+        <li className='text-[#0a192f]'>
+          <Link to='home' spy={true} smooth={true} duration={500}>
+            {/* Home */}
+            {navbar.navHome}
           </Link>
         </li>
-        <li className="text-[#0a192f]">
-          <Link to="about" spy={true} smooth={true} duration={500}>
-            About
+        <li className='text-[#0a192f]'>
+          <Link to='about' spy={true} smooth={true} duration={500}>
+            {/* About */}
+            {navbar.navAbout}
           </Link>
         </li>
-        <li className="text-[#0a192f]">
-          <Link to="portfolio" spy={true} smooth={true} duration={500}>
-            Portfolio
+        <li className='text-[#0a192f]'>
+          <Link to='portfolio' spy={true} smooth={true} duration={500}>
+            {/* Portfolio */}
+            {navbar.navPortfolio}
           </Link>
         </li>
         {/* <li className="text-[#0a192f]">
@@ -59,7 +73,7 @@ const Navbar = (props) => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className='md:hidden z-10'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -67,14 +81,14 @@ const Navbar = (props) => {
       <ul
         className={
           !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            ? 'hidden'
+            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
         }
       >
-        <li className="py-6 text-4xl">
+        <li className='py-6 text-4xl'>
           <Link
             onClick={handleClick}
-            to="home"
+            to='home'
             spy={true}
             smooth={true}
             duration={500}
@@ -82,10 +96,10 @@ const Navbar = (props) => {
             Home
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className='py-6 text-4xl'>
           <Link
             onClick={handleClick}
-            to="about"
+            to='about'
             spy={true}
             smooth={true}
             duration={500}
@@ -93,10 +107,10 @@ const Navbar = (props) => {
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className='py-6 text-4xl'>
           <Link
             onClick={handleClick}
-            to="portfolio"
+            to='portfolio'
             spy={true}
             smooth={true}
             duration={500}
@@ -104,10 +118,10 @@ const Navbar = (props) => {
             Portfolio
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className='py-6 text-4xl'>
           <Link
             onClick={handleClick}
-            to="contact"
+            to='contact'
             spy={true}
             smooth={true}
             duration={500}
